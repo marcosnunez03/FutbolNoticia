@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="for.css">
+<link rel="shortcut icon" href="bola.png" />
+<title>FutbolNoticia</title>
+</head>
+<body background="pitch1.jpg">
+<div id="color">
+<h1 id="top"><img src="bola.png" width="25px"> FutbolNoticia <img src="bola.png" width="25px"></h1>
+<ul id="navbar">
+  <li><a class="nav" href="index.html">Inicio</a></li>
+  <li><a class="nav" href="sevilla.html">Sevilla</a></li>
+  <li><a class="nav" href="betis.html">Betis</a></li>
+  <li><a class="nav" href="cadiz.html">Cádiz</a></li>
+  <li><a class="active" href="contacto.html">Formulario</a></li>
+</ul>
+  <div id="formulario">
+      <form action="formulario.php" method="post">
+      <b>Equipo favorito:</b><br>
+      <input type="radio" name="Equipo" value="1">Sevilla<br>
+      <input type="radio" name="Equipo" value="2">Betis<br>
+      <input type="radio" name="Equipo" value="3">Cadiz<br>
+      <input type="radio" name="Equipo" value="3">Otro<br>
+      <br>
+
+      <input type="text" name="fav" placeholder="Equipo Favorito"><br><br>
+    Color de tu equipo:<input type="color" name="color"><br><br>
+
+    Indique el nivel de tu equipo:<br>
+      <input type="range" name="rango" min="1" max="3" list="lista-rango">
+      <datalist id="lista-rango">
+        <option value="1" label="Protagonista">
+          <option value="2" label="Secundario">
+        <option value="3" label="De relleno">
+      </datalist>
+
+    <input type="submit" value="Enviar"><br>
+    </div>
+</div>
+<h1 id="bottom">Contacto: marcos.nunez.alvarez@iesciudadjardin.com  Tlf: 684 27 46 40</h1>
+</div>
+</body>
